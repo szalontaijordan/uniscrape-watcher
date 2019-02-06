@@ -1,0 +1,25 @@
+{
+  "name": "uniscrape-watcher",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "tsc-watch --onSuccess \"node ./dist/app.js\"",
+    "start": "node ./dist/app.js",
+    "postinstall": "tsc --project .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cron": "^1.6.0",
+    "node-fetch": "^2.3.0"
+  },
+  "devDependencies": {
+    "@types/cron": "^1.6.0",
+    "@types/node-fetch": "^2.1.4",
+    "tsc-watch": "^1.1.36",
+    "typescript": "^3.3.1"
+  }
+}
